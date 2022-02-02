@@ -4,7 +4,6 @@
 
 ``` 
 python3 -m pip install facebook-scraper 
-
 ```
 
 ### After that, paste your cookies in "cookie.txt" file.
