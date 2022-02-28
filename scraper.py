@@ -5,7 +5,11 @@ import csv
 
 tmp=[]
 
-
+f = open('PPPostFBScrape.csv','a', encoding='UTF8')
+append = csv.writer(f) 
+append.writerow(["TITLE","LIKES","SHARES"])
+f.close()
+    
 
 for post in get_posts('PhnomPenhPost', pages=500, cookies='cookie.txt'):
     f = open('PPPostFBScrape.csv','a', encoding='UTF8') #open csv with append moode
